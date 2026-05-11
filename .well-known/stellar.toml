@@ -1,0 +1,12 @@
+# 網路設定
+NETWORK_PASSPHRASE = "Public Global Stellar Network ; September 2015"
+
+[[CURRENCIES]]
+code = "AUDD"
+issuer = "GBXCDHFNJ3Q5N2JLYDEA4PT3PX2BSCICG33AIUYR7NBVJLZKFBJHOH7A"
+display_dec_precision = 7
+description = "AUDD Asset - Official Australian Dollar Token"
+
+[DOCUMENTATION]
+ORG_NAME = "AUDD Coin Group"
+ORG_URL = "https://www.finance.gov.au/"
