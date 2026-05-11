@@ -1,4 +1,4 @@
-# 網路設定
+# NETWORK PASSPHRASE
 NETWORK_PASSPHRASE = "Public Global Stellar Network ; September 2015"
 
 [[CURRENCIES]]
@@ -9,4 +9,4 @@ description = "AUDD Asset - Official Australian Dollar Token"
 
 [DOCUMENTATION]
 ORG_NAME = "AUDD Coin Group"
-ORG_URL = "https://www.finance.gov.au/"
+ORG_URL = "https://audd-asset.vercel.app"
