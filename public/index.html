@@ -1,1 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUDD - The Trusted Australian Digital Dollar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { background-color: #0f172a; color: white; font-family: 'Inter', sans-serif; }
+        .hero-bg {
+            background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), 
+                        url('https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?auto=format&fit=crop&q=80&w=2070');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+    <nav class="flex justify-between items-center px-8 py-6 max-w-7xl mx-auto">
+        <div class="flex items-center space-x-3">
+            <img src="/logo.png" alt="AUDD Logo" class="h-12 w-12 object-contain">
+            <span class="text-2xl font-bold tracking-tight">AUDD</span>
+        </div>
+        <div class="hidden md:flex space-x-8 text-sm font-medium">
+            <a href="#" class="hover:text-yellow-500 transition">About</a>
+            <a href="#" class="hover:text-yellow-500 transition">Technology</a>
+            <a href="#" class="hover:text-yellow-500 transition">Security</a>
+            <a href="#" class="hover:text-yellow-500 transition">FAQ</a>
+            <a href="mailto:support@audd-asset.vercel.app" class="border border-yellow-500 text-yellow-500 px-4 py-2 rounded-md hover:bg-yellow-500 hover:text-white transition">Contact Us</a>
+        </div>
+    </nav>
 
+    <header class="hero-bg h-[600px] flex flex-col justify-center items-center text-center px-4">
+        <h1 class="text-4xl md:text-6xl font-extrabold mb-4 text-yellow-500">AUDD: THE TRUSTED AUSTRALIAN DIGITAL DOLLAR</h1>
+        <p class="text-xl md:text-2xl text-gray-300 max-w-2xl mb-8">
+            Instant. Secure. Fully Backed 1:1 by AUD Reserves. 
+            The bridge between traditional finance and the digital future.
+        </p>
+        <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+            <a href="#" class="bg-yellow-600 hover:bg-yellow-500 text-white px-8 py-4 rounded-lg font-bold text-lg transition uppercase">Explore the Whitepaper</a>
+        </div>
+        <p class="mt-6 text-sm text-gray-400 underline cursor-pointer">Learn About Our Compliance</p>
+    </header>
+
+    <section class="max-w-7xl mx-auto px-8 py-20 grid md:grid-cols-2 gap-16">
+        <div>
+            <h2 class="text-3xl font-bold mb-10 border-b border-gray-700 pb-4">WHY AUDD?</h2>
+            <div class="space-y-8">
+                <div class="flex items-start space-x-4">
+                    <div class="bg-gray-800 p-3 rounded-lg text-yellow-500 text-2xl">⚓</div>
+                    <div>
+                        <h3 class="font-bold text-xl">RELIABLE STABILITY</h3>
+                        <p class="text-gray-400">AUDD is pegged 1:1 to the Australian Dollar, providing a stable medium for trade and value storage.</p>
+                    </div>
+                </div>
+                <div class="flex items-start space-x-4">
+                    <div class="bg-gray-800 p-3 rounded-lg text-yellow-500 text-2xl">🔍</div>
+                    <div>
+                        <h3 class="font-bold text-xl">TRANSPARENT RESERVES</h3>
+                        <p class="text-gray-400">All reserves are audited by independent third parties to ensure full backing at all times.</p>
+                    </div>
+                </div>
+                <div class="flex items-start space-x-4">
+                    <div class="bg-gray-800 p-3 rounded-lg text-yellow-500 text-2xl">⚡</div>
+                    <div>
+                        <h3 class="font-bold text-xl">INSTANT SETTLEMENT</h3>
+                        <p class="text-gray-400">Powered by the Stellar network, AUDD enables 24/7 cross-border transfers in seconds.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h2 class="text-3xl font-bold mb-10 border-b border-gray-700 pb-4">RESOURCES</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div class="bg-gray-800/50 p-6 rounded-xl border border-gray-700 text-center">
+                    <div class="text-4xl mb-4">📄</div>
+                    <h4 class="font-bold mb-2">WHITE PAPER</h4>
+                    <p class="text-xs text-gray-400 mb-4">Download the complete AUDD technical whitepaper.</p>
+                    <a href="#" class="inline-block text-yellow-500 font-bold hover:underline">↓ [Download PDF]</a>
+                </div>
+                <div class="bg-gray-800/50 p-6 rounded-xl border border-gray-700 text-center">
+                    <div class="text-4xl mb-4">📋</div>
+                    <h4 class="font-bold mb-2">AUDIT REPORT</h4>
+                    <p class="text-xs text-gray-400 mb-4">Review the latest independent reserve audit.</p>
+                    <a href="#" class="inline-block text-yellow-500 font-bold hover:underline">↓ [Download PDF]</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center py-10 text-gray-500 text-sm border-t border-gray-800">
+        © 2026 AUDD Coin Group. All rights reserved. Powered by Stellar.
+    </footer>
+</body>
+</html>
