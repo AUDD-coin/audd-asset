@@ -7,8 +7,8 @@ issuer = "GBXCDHFNJ3Q5N2JLYDEA4PT3PX2BSCICG33AIUYR7NBVJLZKFBJHOH7A"
 display_dec_precision = 7
 name="AUDD Token"
 anchor_asset_type="crypto"
-description = "AUDD Asset - Official Australian Dollar Token"
-desc="Australia's fast, stable, secure fiat-backed stablecoin. Get AUDD today at https://audd-asset.vercel.app"
+anchor_asset_code="AUD"
+desc="Australia's fast, stable, crypto currency. Get AUDD today at https://audd-asset.vercel.app"
 image="https://audd-asset.vercel.app/logo.png"
 
 [DOCUMENTATION]
