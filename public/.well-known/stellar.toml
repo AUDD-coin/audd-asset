@@ -1,10 +1,11 @@
 # NETWORK PASSPHRASE
-NETWORK_PASSPHRASE = "Public Global Stellar Network ; September 2015"
+NETWORK_PASSPHRASE= "Public Global Stellar Network ; September 2015"
 
 [[CURRENCIES]]
-code = "AUDD"
-issuer = "GBXCDHFNJ3Q5N2JLYDEA4PT3PX2BSCICG33AIUYR7NBVJLZKFBJHOH7A"
-display_dec_precision = 7
+code= "AUDD"
+issuer= "GBXCDHFNJ3Q5N2JLYDEA4PT3PX2BSCICG33AIUYR7NBVJLZKFBJHOH7A"
+name= "THE TRUSTED AUSTRALIAN DIGITAL DOLLAR"
+display_dec_precision= 7
 name="AUDD Token"
 anchor_asset_type="crypto"
 anchor_asset_code="AUD"
