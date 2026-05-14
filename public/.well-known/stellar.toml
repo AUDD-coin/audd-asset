@@ -1,5 +1,12 @@
+ACCOUNTS=["GBXCDHFNJ3Q5N2JLYDEA4PT3PX2BSCICG33AIUYR7NBVJLZKFBJHOH7A"]
+
 # NETWORK PASSPHRASE
 NETWORK_PASSPHRASE= "Public Global Stellar Network ; September 2015"
+
+[DOCUMENTATION]
+ORG_NAME= "AUDD Coin Group"
+ORG_URL= "https://audd-asset.vercel.app"
+ORG_LOGO="https://audd-asset.vercel.app/logo.png"
 
 [[CURRENCIES]]
 code= "AUDD"
@@ -11,6 +18,4 @@ anchor_asset= "AUDD"
 desc= "Australia's fast, stable, crypto currency. Get AUDD today at https://audd-asset.vercel.app"
 image= "https://audd-asset.vercel.app/logo.png"
 
-[DOCUMENTATION]
-ORG_NAME= "AUDD Coin Group"
-ORG_URL= "https://audd-asset.vercel.app"
+
