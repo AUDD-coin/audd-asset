@@ -15,7 +15,7 @@ display_decimals= 7
 name= "AUDD Coin"
 anchor_asset_type= "crypto"
 anchor_asset= "AUDD"
-desc= "Australia's fast, stable, crypto currency. Add TrustLine today at lobstr.co/assets/AUDD:GBXCDHFNJ3Q5N2JLYDEA4PT3PX2BSCICG33AIUYR7NBVJLZKFBJHOH7A"
+desc= "Australia's fast, stable, crypto currency. Add AUDD Coin today at https://audd-asset.vercel.app"
 image= "https://audd-asset.vercel.app/logo.png"
 
 
