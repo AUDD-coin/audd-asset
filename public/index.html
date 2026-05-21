@@ -1,236 +1,95 @@
 <!DOCTYPE html>
-<html lang="zh-TW" style="background-color: #020617; color: #f8fafc;">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AUDD - The Trusted Australian Digital Dollar | 連結亞太與全球的合規數位澳幣</title>
+    <title>AUDD - The Trusted Australian Digital Dollar</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        navy: {
-                            light: '#1e293b',
-                            DEFAULT: '#0f172a',
-                            dark: '#020617',
-                        },
-                        gold: {
-                            light: '#fcd34d',
-                            DEFAULT: '#fbbf24',
-                            dark: '#d97706',
-                        }
-                    }
-                }
-            }
-        }
-    </script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        /* 強制防禦白屏的 CSS 保險 */
-        body { background-color: #0f172a !important; color: #f8fafc !important; }
-        html { scroll-behavior: smooth; }
+        body { background-color: #0f172a; color: white; font-family: 'Inter', sans-serif; }
+        .hero-bg {
+            background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), 
+                        url('https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?auto=format&fit=crop&q=80&w=2070');
+            background-size: cover;
+            background-position: center;
+        }
     </style>
 </head>
-<body class="bg-navy text-gray-100 font-sans antialiased">
-
-    <nav class="border-b border-gray-800 bg-[#020617]/90 backdrop-blur sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <div class="flex items-center space-x-3">
-                <div class="bg-gradient-to-r from-blue-600 to-gold w-10 h-10 rounded-full flex items-center justify-center font-bold text-white tracking-wider text-sm shadow-md">
-                    A$
-                </div>
-                <span class="text-2xl font-black tracking-wider bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400">AUDD</span>
-            </div>
-            <div class="hidden md:flex items-center space-x-8 text-sm font-medium tracking-wide">
-                <a href="#why-audd" class="hover:text-gold transition-colors">核心優勢</a>
-                <a href="#technology" class="hover:text-gold transition-colors">技術與合規</a>
-                <a href="#use-cases" class="hover:text-gold transition-colors">應用場景</a>
-                <a href="#resources" class="hover:text-gold transition-colors">資源下載</a>
-            </div>
-            <div>
-                <a href="mailto:support@audd.com" class="border border-gold text-gold hover:bg-gold hover:text-navy-dark font-semibold px-5 py-2.5 rounded-lg text-sm transition-all duration-300 shadow-lg shadow-gold/10">
-                    聯絡我們
-                </a>
-            </div>
+<body>
+    <nav class="flex justify-between items-center px-8 py-6 max-w-7xl mx-auto">
+        <div class="flex items-center space-x-3">
+            <img src="/logo.png" alt="AUDD Logo" class="h-12 w-12 object-contain">
+            <span class="text-2xl font-bold tracking-tight">AUDD</span>
+        </div>
+        <div class="hidden md:flex space-x-8 text-sm font-medium">
+            <a href="#" class="hover:text-yellow-500 transition">About</a>
+            <a href="#" class="hover:text-yellow-500 transition">Technology</a>
+            <a href="#" class="hover:text-yellow-500 transition">Security</a>
+            <a href="#" class="hover:text-yellow-500 transition">FAQ</a>
+            <a href="mailto:support@audd-asset.vercel.app" class="border border-yellow-500 text-yellow-500 px-4 py-2 rounded-md hover:bg-yellow-500 hover:text-white transition">Contact Us</a>
         </div>
     </nav>
 
-    <header class="relative overflow-hidden py-24 lg:py-32 bg-gradient-to-b from-[#020617] via-[#0f172a] to-[#020617]">
-        <div class="absolute top-0 right-0 -my-20 -mx-20 w-96 h-96 bg-gold/5 rounded-full blur-3xl pointer-events-none"></div>
-        <div class="absolute bottom-0 left-0 -my-20 -mx-20 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl pointer-events-none"></div>
-
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-semibold uppercase tracking-wider mb-6">
-                <i class="fa-solid fa-shield-halved"></i> 100% 完全合規審計支援
-            </div>
-            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white mb-6 leading-tight">
-                連結亞太與全球：最值得信賴的<br>
-                <span class="bg-clip-text text-transparent bg-gradient-to-r from-gold via-yellow-300 to-amber-500">合規澳洲數位元 (AUDD)</span>
-            </h1>
-            <p class="text-lg sm:text-xl text-gray-400 max-w-3xl mx-auto mb-10 leading-relaxed">
-                1:1 穩定錨定澳幣。依託 Stellar 區塊鏈，為您提供秒級結算、完全合規且極低成本的全球資產流動性解決方案。
-            </p>
-            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
-                <a href="#resources" class="w-full sm:w-auto bg-gradient-to-r from-gold to-amber-500 hover:from-gold-light hover:to-gold text-navy-dark font-bold px-8 py-4 rounded-xl shadow-xl shadow-gold/20 transition-all transform hover:-translate-y-0.5 text-center">
-                    下載技術白皮書
-                </a>
-                <a href="#technology" class="w-full sm:w-auto bg-gray-800/80 hover:bg-gray-800 border border-gray-700 font-semibold px-8 py-4 rounded-xl transition-all text-center">
-                    了解合規與架構
-                </a>
-            </div>
+    <header class="hero-bg h-[600px] flex flex-col justify-center items-center text-center px-4">
+        <h1 class="text-4xl md:text-6xl font-extrabold mb-4 text-yellow-500">AUDD: THE TRUSTED AUSTRALIAN DIGITAL DOLLAR</h1>
+        <p class="text-xl md:text-2xl text-gray-300 max-w-2xl mb-8">
+            Instant. Secure. The bridge between traditional finance and the digital future.
+        </p>
+        <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+            <a href="#" class="bg-yellow-600 hover:bg-yellow-500 text-white px-8 py-4 rounded-lg font-bold text-lg transition uppercase">Explore the Whitepaper</a>
         </div>
+        <p class="mt-6 text-sm text-gray-400 underline cursor-pointer">Learn About Our Compliance</p>
     </header>
 
-    <section id="why-audd" class="py-20 border-t border-gray-900 bg-[#020617]">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">為什麼選擇 AUDD？</h2>
-                <p class="mt-4 text-gray-400">用技術透明度擊敗中心化黑箱，為企業與投資者打造最強資產橋樑。</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-[#0f172a] border border-gray-800 p-8 rounded-2xl shadow-xl hover:border-gold/30 transition-all group">
-                    <div class="w-12 h-12 bg-gold/10 text-gold rounded-xl flex items-center justify-center text-xl font-bold mb-6">
-                        <i class="fa-solid fa-anchor"></i>
+    <section class="max-w-7xl mx-auto px-8 py-20 grid md:grid-cols-2 gap-16">
+        <div>
+            <h2 class="text-3xl font-bold mb-10 border-b border-gray-700 pb-4">WHY AUDD?</h2>
+            <div class="space-y-8">
+                <div class="flex items-start space-x-4">
+                    <div class="bg-gray-800 p-3 rounded-lg text-yellow-500 text-2xl">⚓</div>
+                    <div>
+                        <h3 class="font-bold text-xl">RELIABLE STABILITY</h3>
+                        <p class="text-gray-400">AUDD is providing a stable medium for trade and value storage.</p>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3">100% 法幣儲備保證</h3>
-                    <p class="text-gray-400 leading-relaxed text-sm">
-                        每一枚 AUDD 均由澳洲頂級銀行託管的同等澳幣（AUD）提供 1:1 儲備支持，徹底杜絕脫錨風險，確保資產絕對穩定。
-                    </p>
                 </div>
-
-                <div class="bg-[#0f172a] border border-gray-800 p-8 rounded-2xl shadow-xl hover:border-gold/30 transition-all group">
-                    <div class="w-12 h-12 bg-blue-500/10 text-blue-400 rounded-xl flex items-center justify-center text-xl font-bold mb-6">
-                        <i class="fa-solid fa-magnifying-glass"></i>
+                <div class="flex items-start space-x-4">
+                    <div class="bg-gray-800 p-3 rounded-lg text-yellow-500 text-2xl">🔍</div>
+                    <div>
+                        <h3 class="font-bold text-xl">TRANSPARENT RESERVES</h3>
+                        <p class="text-gray-400">All reserves are audited by independent third parties to ensure full backing at all times.</p>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3">即時鏈上驗證 & 獨立審計</h3>
-                    <p class="text-gray-400 leading-relaxed text-sm">
-                        拒絕黑箱作業。我們結合 Stellar 鏈上即時數據，並定期由國際權威第三方審計機構發佈儲備報告，資金流向完全公開透明。
-                    </p>
                 </div>
-
-                <div class="bg-[#0f172a] border border-gray-800 p-8 rounded-2xl shadow-xl hover:border-gold/30 transition-all group">
-                    <div class="w-12 h-12 bg-emerald-500/10 text-emerald-400 rounded-xl flex items-center justify-center text-xl font-bold mb-6">
-                        <i class="fa-solid fa-bolt"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-white mb-3">全球秒級跨境結算</h3>
-                    <p class="text-gray-400 leading-relaxed text-sm">
-                        擺脫傳統 SWIFT 網絡 3-5 天的漫長等待與昂貴匯費。基於 Stellar 網路，無論何時何地，數秒內即可完成大額跨境清算。
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="technology" class="py-20 bg-[#0f172a] relative">
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="bg-gradient-to-b from-gray-900 to-[#020617] border border-gray-800 rounded-3xl p-8 sm:p-12 shadow-2xl">
-                <h2 class="text-2xl sm:text-3xl font-bold text-white mb-8 text-center md:text-left">
-                    <i class="fa-solid fa-microchip text-gold mr-3"></i> 企業級的技術與合規架構
-                </h2>
-                <div class="space-y-8">
-                    <div class="flex gap-4">
-                        <div class="text-gold mt-1"><i class="fa-regular fa-circle-check text-xl"></i></div>
-                        <div>
-                            <h4 class="text-lg font-semibold text-white">Stellar 網絡高效賦能</h4>
-                            <p class="text-gray-400 text-sm mt-1">選擇 Stellar 作為底層架構，具備高併發、極低 Gas 費處理能力，其原生合規資產控制功能（Asset Control）能完美配合全球金融監管。</p>
-                        </div>
-                    </div>
-                    <div class="flex gap-4">
-                        <div class="text-gold mt-1"><i class="fa-regular fa-circle-check text-xl"></i></div>
-                        <div>
-                            <h4 class="text-lg font-semibold text-white">嚴格遵循 AUSTRAC 合規標準</h4>
-                            <p class="text-gray-400 text-sm mt-1">作為澳洲合規數位資產，我們嚴格遵守澳洲交易報告及分析中心（AUSTRAC）的防洗錢（AML）與反恐怖融資（CTF）規範。</p>
-                        </div>
+                <div class="flex items-start space-x-4">
+                    <div class="bg-gray-800 p-3 rounded-lg text-yellow-500 text-2xl">⚡</div>
+                    <div>
+                        <h3 class="font-bold text-xl">INSTANT SETTLEMENT</h3>
+                        <p class="text-gray-400">Powered by the Stellar network, AUDD enables 24/7 cross-border transfers in seconds.</p>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
 
-    <section id="use-cases" class="py-20 bg-[#020617]">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">哪些人正在使用 AUDD？</h2>
-                <p class="mt-4 text-gray-400">三大黃金應用場景，完美融入您的商業與投資版圖。</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-[#0f172a] p-6 rounded-2xl border border-gray-800 text-center">
-                    <div class="w-16 h-16 bg-blue-600/10 text-blue-500 rounded-full flex items-center justify-center text-2xl mx-auto mb-6">
-                        <i class="fa-solid fa-globe"></i>
-                    </div>
-                    <h3 class="text-lg font-bold text-white mb-2">跨境貿易與電商</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed">告別高額跨國匯費，用 AUDD 實現與澳洲供應商零時差、極低成本的即時結算。</p>
-                </div>
-
-                <div class="bg-[#0f172a] p-6 rounded-2xl border border-gray-800 text-center">
-                    <div class="w-16 h-16 bg-gold/10 text-gold rounded-full flex items-center justify-center text-2xl mx-auto mb-6">
-                        <i class="fa-solid fa-chart-line"></i>
-                    </div>
-                    <h3 class="text-lg font-bold text-white mb-2">數位資產投資者</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed">在加密市場動盪期間，提供最穩健的澳幣（AUD）避險通道、儲值選項與流動性資金池。</p>
-                </div>
-
-                <div class="bg-[#0f172a] p-6 rounded-2xl border border-gray-800 text-center">
-                    <div class="w-16 h-16 bg-purple-600/10 text-purple-500 rounded-full flex items-center justify-center text-2xl mx-auto mb-6">
-                        <i class="fa-solid fa-code"></i>
-                    </div>
-                    <h3 class="text-lg font-bold text-white mb-2">Web3 創新企業</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed">透過健全、高效的 API 開發接口，開發者能將合規的澳幣支付功能輕鬆無縫地接入應用中。</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="resources" class="py-20 bg-[#0f172a] border-t border-gray-900">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-3xl font-bold text-white mb-4">透明運作，公開查驗</h2>
-            <p class="text-gray-400 mb-12">我們隨時準備接受檢驗，歡迎下載官方最新技術與合規證明文件。</p>
-
+        <div>
+            <h2 class="text-3xl font-bold mb-10 border-b border-gray-700 pb-4">RESOURCES</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                <div class="bg-[#020617] border border-gray-800 p-6 rounded-xl flex items-center justify-between text-left hover:border-gold/30 transition-all">
-                    <div class="flex items-center space-x-4">
-                        <div class="text-red-500 text-3xl"><i class="fa-regular fa-file-pdf"></i></div>
-                        <div>
-                            <h4 class="font-bold text-white">技術白皮書 (Whitepaper)</h4>
-                            <p class="text-xs text-gray-500">深入了解 AUDD 架構與發行機制</p>
-                        </div>
-                    </div>
-                    <a href="https://audd-asset.vercel.app/" target="_blank" class="bg-gradient-to-r from-gold to-amber-500 text-navy-dark font-bold px-4 py-2 rounded-lg text-xs tracking-wider uppercase transition-colors">
-                        下載 PDF
-                    </a>
+                <div class="bg-gray-800/50 p-6 rounded-xl border border-gray-700 text-center">
+                    <div class="text-4xl mb-4">📄</div>
+                    <h4 class="font-bold mb-2">WHITE PAPER</h4>
+                    <p class="text-xs text-gray-400 mb-4">Download the complete AUDD technical whitepaper.</p>
+                    <a href="#" class="inline-block text-yellow-500 font-bold hover:underline">↓ [Download PDF]</a>
                 </div>
-
-                <div class="bg-[#020617] border border-gray-800 p-6 rounded-xl flex items-center justify-between text-left hover:border-gold/30 transition-all">
-                    <div class="flex items-center space-x-4">
-                        <div class="text-green-500 text-3xl"><i class="fa-regular fa-file-shield"></i></div>
-                        <div>
-                            <h4 class="font-bold text-white">儲備審計報告 (Audit Report)</h4>
-                            <p class="text-xs text-gray-500">獨立第三方機構最新資產儲備報告</p>
-                        </div>
-                    </div>
-                    <a href="https://audd-asset.vercel.app/" target="_blank" class="bg-gradient-to-r from-gold to-amber-500 text-navy-dark font-bold px-4 py-2 rounded-lg text-xs tracking-wider uppercase transition-colors">
-                        下載 PDF
-                    </a>
+                <div class="bg-gray-800/50 p-6 rounded-xl border border-gray-700 text-center">
+                    <div class="text-4xl mb-4">📋</div>
+                    <h4 class="font-bold mb-2">AUDIT REPORT</h4>
+                    <p class="text-xs text-gray-400 mb-4">Review the latest independent reserve audit.</p>
+                    <a href="#" class="inline-block text-yellow-500 font-bold hover:underline">↓ [Download PDF]</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="bg-[#020617] text-gray-500 text-sm py-12 border-t border-gray-900">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
-            <p class="text-gray-400">對接入 AUDD 或企業合作有興趣？歡迎與我們的推廣團隊聯繫。</p>
-            <div>
-                <a href="mailto:support@audd.com" class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg shadow-lg transition-all">
-                    <i class="fa-regular fa-envelope"></i> 聯繫商務合作團隊
-                </a>
-            </div>
-            <hr class="border-gray-900 my-8">
-            <p>© 2026 AUDD Coin Group. All rights reserved. Powered by Stellar.</p>
-        </div>
+    <footer class="text-center py-10 text-gray-500 text-sm border-t border-gray-800">
+        © 2026 AUDD Coin Group. All rights reserved. Powered by Stellar.
     </footer>
-
 </body>
 </html>
